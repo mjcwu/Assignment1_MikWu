@@ -1,0 +1,51 @@
+
+body{
+    padding: 15px;
+    height: 100vh;
+    width: 100vw;
+
+}
+#blueBox{
+    background-color: blue;
+    height: 100%;
+    width: 100%;
+    border-bottom-right-radius: 100% ;
+    border-bottom: 5px solid white;
+    border-right: 5px solid white;
+}
+
+#greenBox{
+    background-color: green;
+    height: 50%;
+    width: 50%;
+    border-bottom-right-radius: 100% ;
+    border-bottom: 5px solid white;
+    border-right: 5px solid white;
+}
+
+#yellowBox{
+    background-color: yellow;
+    height: 50%;
+    width: 50%;
+    border-bottom-right-radius: 100% ;
+    border-bottom: 5px solid white;
+    border-right: 5px solid white;
+}
+
+#orangeBox{
+    background-color: orange;
+    height: 50%;
+    width: 50%;
+    border-bottom-right-radius: 100% ;
+    border-bottom: 5px solid white;
+    border-right: 5px solid white;
+}
+
+#redBox{
+    background-color: red;
+    height: 50%;
+    width: 50%;
+    border-bottom-right-radius: 100% ;
+    border-bottom: 5px solid white;
+    border-right: 5px solid white;
+}

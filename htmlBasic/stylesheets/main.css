@@ -1,0 +1,67 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* how do you select a div with a cursor on top? */
+
+div:hover {
+
+}
+
+/* how do you select an element with attibute data-content?*/
+
+[data-content]{
+
+}
+
+/* how do you select all child elements of ul, but the last?*/
+
+ul > *:not(:last-child){
+
+}
+
+body{
+    margin:0;
+}
+
+nav > a {
+    color: white;
+    text-decoration: none;
+}
+
+form.form-inline {
+    display: inline;
+}
+
+header{
+    background-color: slateblue;
+    /*margin: 5px;*/
+    padding: 5px;
+}
+
+ul{
+    padding: 0;
+    list-style: none;
+}
+
+ul > li {
+    height: 75px;
+    background-color: seagreen;
+    border-radius: 5px;
+
+    color: white;
+    padding: 10px;
+
+    margin-bottom: 10px;
+
+}
+
+main{
+    padding: 0 10px; 
+    /* vertical | horizontal */
+    /* padding: 0 10px 0 10px */
+    /* top | right | bottom | left*/
+    /* this format also works for margin */
+
+}
+

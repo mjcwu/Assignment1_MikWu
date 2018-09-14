@@ -1,0 +1,73 @@
+<!---
+DOCTYPE is not tag. it's an annotation for the browser
+indicating what version of html 
+
+-->
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title> HTML & CSS Demo </title>
+        <link rel="stylesheet" href="./stylesheets/main.css ">
+    </head>
+        
+    <body>
+        <!--
+            the <body> tag will hold all tags that will be displayed
+                content. text, images, sound, tables.....etc.
+        -->
+        <header>
+            <nav>
+                <a href="http://www.google.com">Google</a>
+                <a href="http://nyan.cat">Nyan Cat</a>
+                <a href="">Boards</a>
+                <a href="">Profiles</a>
+
+                <form class="form-inline" action="/process_search">
+                    <input type="search" name="query" id="query">
+                    <input type="submit" value="Search">
+                </form>
+            </nav>
+        </header>
+
+        <main>
+            <!-- 
+                the "id" html attribute works with any tags.
+                it's used as a unique identifier like a person's full name.
+                All "id" attibutes on a page should be unique. no tag should
+                have the same "id"
+            -->
+            <section id="Starred-boards">
+                <h1>Starred Boards</h1>
+                <UL>
+                    <li>Management</li>
+                    <li>Learning to Hack</li>
+                </UL>
+            </section>
+
+            <section id="Personal-boards">
+                <h1>Personal Boards</h1>
+                <ul>
+                    <li>Management</li>
+                    <li>Learning to Hack
+                        <div>
+                            <img width="200px" src="https://images.pexels.com/photos/358220/pexels-photo-358220.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=350" alt="A380">
+                        </div>
+                    </li>
+                    <li>My Ideas
+                            <div>
+                                    <img width="200px" src="https://images.pexels.com/photos/358220/pexels-photo-358220.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=350" alt="A380">
+                                </div>
+        
+                    </li>
+                    <li>Create New Board.......</li>
+                </ul>
+            </section>
+        </main>
+
+    </body>
+
+
+
+</html>
