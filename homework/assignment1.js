@@ -49,20 +49,18 @@ function drawBars(userString, maxStrNum){
             for(let m=userString.length;m<maxStrNum;m+=1){
             drawBarsAround = drawBarsAround + " ";
             }
+            drawBarsAround = drawBarsAround + "┃";
+            return drawBarsAround;
         }
-    drawBarsAround = drawBarsAround + "┃";
-    return drawBarsAround;
+    
 }
 //--------------Box It---------------------
 function boxIt(userArray){
     let maxStr=0;
     for(let k=0;k<userArray.length;k+=1){
         for(let index of userArray){
-            console.log("userArray k ="+userArray[k])
-            console.log("index = "+index)
             if(userArray[k].length<=index.length && index.length>=maxStr){
                 maxStr=index.length;
-                console.log(maxStr)
             }
         }
     }
@@ -82,4 +80,7 @@ function boxIt(userArray){
     modifiedString = modifiedString+"\n"+drawBottomBorder(maxStr); //adding bottom border
     return modifiedString; 
 }
-console.log(boxIt(["Mandy Lo", "Catherine Wong", "both are beautiful ladies"]));
+console.log(boxIt(["Ant-man", "Iron-man........", "Loki", "Captain America", "Hulk........."]));
+console.log(boxIt(["Ant-man"]));
+console.log(boxIt([""]));
+console.log(boxIt(["Ant-man", "Iron-man...", "Loki", "Captain America", "Hulk.........", "x-man"]));
