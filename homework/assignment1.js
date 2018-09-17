@@ -64,7 +64,7 @@ function boxIt(userArray){
             }
         }
     }
-    console.log("max="+maxStr)
+    
     let modifiedString = drawTopBorder(maxStr); //add top border
     if(userArray.length===1){ //if there is only one string
         modifiedString = modifiedString + "\n"+drawBars(userArray[0]);
