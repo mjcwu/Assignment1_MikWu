@@ -58,25 +58,28 @@ function boxIt(userArray){
     let maxStr=0;
     for(let k=0;k<userArray.length;k+=1){
         for(let index of userArray){
-            if(userArray[k].length<index.length){
+            console.log("userArray k ="+userArray[k])
+            console.log("index = "+index)
+            if(userArray[k].length<=index.length && index.length>=maxStr){
                 maxStr=index.length;
+                console.log(maxStr)
             }
         }
     }
     console.log("max="+maxStr)
-    let modifiedString = drawTopBorder(maxStr); 
-    if(userArray.length===1){
+    let modifiedString = drawTopBorder(maxStr); //add top border
+    if(userArray.length===1){ //if there is only one string
         modifiedString = modifiedString + "\n"+drawBars(userArray[0]);
     } else {
         for(let j=0; j < userArray.length; j+=1){
-            if(j===(userArray.length-1)){
+            if(j===(userArray.length-1)){ //last row before buttom border
                 modifiedString = modifiedString + "\n"+drawBars(userArray[j],maxStr);
-            } else {
+            } else { //middle row
                 modifiedString = modifiedString + "\n"+drawBars(userArray[j],maxStr)+ "\n"+ drawMiddleBorder(maxStr);
             } 
         }
     }
-    modifiedString = modifiedString+"\n"+drawBottomBorder(maxStr);
+    modifiedString = modifiedString+"\n"+drawBottomBorder(maxStr); //adding bottom border
     return modifiedString; 
 }
-console.log(boxIt(["I love you Catherine Wong","Iron man","Hulk","Black Widow","Drax the Destoryer"]));
+console.log(boxIt(["Mandy Lo", "Catherine Wong", "both are beautiful ladies"]));
