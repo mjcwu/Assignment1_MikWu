@@ -83,4 +83,4 @@ function boxIt(userArray){
 console.log(boxIt(["Ant-man", "Iron-man........", "Loki", "Captain America", "Hulk........."]));
 console.log(boxIt(["Ant-man"]));
 console.log(boxIt([""]));
-console.log(boxIt(["Ant-man", "Iron-man...", "Loki", "Captain America", "Hulk.........", "x-man"]));
+console.log(boxIt(["     Ant-man", "Iron-man...", "Loki", "Captain America", "Hulk.........", "x-man"]));
